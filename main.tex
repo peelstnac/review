@@ -20,8 +20,21 @@ Using the common identity (see any quantum mechanics textbook)
 $$\sedm{\lra{w_i, e_j}}\sedm{\lra{e_i, w_j}} = \sedm{\lra{w_i, w_j}},$$ 
 we arrive at the desired result.
 
-\begin{problem*}
+\begin{problem*}[4-4]
 \end{problem*}
+
+\begin{align*}
+    f^*\omega(v_1, ..., v_n) 
+    &= 
+    \omega(f(v_1), ..., f(v_n)) \\
+    &=
+    \det\sedm{T(f(v_i), f(e_j))}\omega(f(e_1), ..., f(e_n)) &\text{(Theorem 4-3)} \\
+    &=
+    \det\sedm{T(f(v_i), f(e_j))}\\
+    &= 
+    \det\sedm{\lra{v_i, e_j}},
+\end{align*}
+where the last two equalities come from the fact that $\omega$ is a volume element and $f^*T(\cdot, \cdot) = \lra{\cdot, \cdot}$.
 
 
 \end{document}
