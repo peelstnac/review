@@ -42,6 +42,25 @@ Because $\det$ is continuous, the image of $\det\circ c$ on the path must be of 
 
 \begin{problem*}[4-6]
 \end{problem*}
+(a) We have $v_1\times v_2 = \det[v_1\ v_2]$.
+
+(b) By definition, $\det[v_1, ..., v_{n - 1}, v_1\times\cdots \times v_{n - 1}] = ||v_1\times\cdots \times v_{n - 1}||^2$.
+
+\begin{problem*}[4-7]
+\end{problem*}
+Fix $\omega\in \wedge^n(V)$.
+Let $S$ be any inner product on $V$.
+Construct inner product $T$ by scaling $S$ by $\frac{1}{\omega(e_1, ..., e_n)^2}$, 
+where $e_1, ..., e_n$ is an orthonormal basis for $V$.
+Now, it's easy to see that $\omega$ is a volume element with respect to $T$.
+
+\begin{problem*}[4-8]
+\end{problem*}
+Take $T$ to be the inner product on $V$.
+Let $\varphi\in V^*$ be given by $\varphi(v) = \omega(v_1, ..., v_{n - 1}, v)$, 
+where $v_1, ..., v_{n - 1}$ are fixed.
+Then, by the Riesz representation theorem, $\varphi(v) = T(v, w)$ for some $w\in V$.
+We can now define $v_1\times \cdots \times v_{n - 1} = w$.
 
 
 \end{document}
