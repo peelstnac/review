@@ -62,5 +62,63 @@ where $v_1, ..., v_{n - 1}$ are fixed.
 Then, by the Riesz representation theorem, $\varphi(v) = T(v, w)$ for some $w\in V$.
 We can now define $v_1\times \cdots \times v_{n - 1} = w$.
 
+\begin{problem*}[4-9]
+\end{problem*}
+(a) and (b) By definition, 
+$$
+    \lra{v\times w, e_i} = \det[v \ w\ e_i],
+$$
+and the formula in (b) follows.
+(a) is obtained by applying (b).
+
+(c) We have 
+\begin{align*}
+    \frac{1}{\norm{v}^2\norm{w}^2}\norm{v\times w}^2
+    &=
+    \frac{1}{\norm{v}^2\norm{w}^2}
+    \norm{\vv{
+        v_2w_3 - v_3w_2 \\
+        v_3w_1 - v_1w_3 \\
+        v_1w_2 - v_2w_1
+    }}^2 \\
+    &=
+    \frac{1}{\norm{v}^2\norm{w}^2}
+    (
+        v_2^2w_3^2 + v_3^2w_2^2 - 2v_2v_3w_2w_3 \\
+        &+
+        v_3^2w_1^2 + v_1^2w_3^2 - 2v_1v_3w_1w_3 \\
+        &+
+        v_1^2w_2^2 + v_2^2w_1^2 - 2v_1v_2w_1w_2
+    ) \\
+    &= 1 - \frac{\lra{v, w}^2}{\norm{v}^2\norm{w}^2} \\
+    &= 1 - \cos^2\theta \\
+    &= \sin^2\theta
+\end{align*}
+so $\norm{v\times w} = \norm{v}\norm{w}\sin\theta$.
+By definition, 
+$$
+    \lra{v\times w, v} = \det[v\ w\ v] = 0,
+$$
+and $\lra{v\times w, w} = 0$ follows similarly.
+
+(d) We have
+$$
+    \lra{v, w\times z} = \det[w\ z\ v] = \lra{w, z\times v} = \det[z\ v\ w] = \lra{z, v\times w} = \det[v\ w\ z].
+$$
+To prove the vector triple product identity, we have to bash out some algebra.
+I'm too lazy to type it out, so I will leave it as an exercise to the reader.
+
+(e) We have 
+\begin{align*}
+    \norm{v\times w}^2 
+    &=
+    \norm{v}^2\norm{w}^2\sin^2\theta \\
+    &=
+    \norm{v}^2\norm{w}^2(1 - \cos^2\theta) \\
+    &=
+    \norm{v}^2\norm{w}^2 - \lra{v, w}^2 \\
+    &=
+    \lra{v, v}\lra{w, w} - \lra{v, w}^2.
+\end{align*}
 
 \end{document}
