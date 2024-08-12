@@ -179,5 +179,64 @@ Then,
 
 (b) Follows from Theorem 4-7.
 
+\begin{problem*}[4-14]
+\end{problem*}
+Follows immediately from problem 4-13.
+
+\begin{problem*}[4-15]
+\end{problem*}
+Tangent vector is $c_*((e_1)_t) = (1, f'(t))_{c(t)}$.
+Endpoint is $(1 + t, f'(t) + f(t))$.
+Tangent line $y = f'(t)(x - t) + f(t)$.
+One may verify that the endpoint lies on the tangent line.
+
+\begin{problem*}[4-16]
+\end{problem*}
+We have $\frac{d}{dt}\norm{c(t)}^2 = 0 = 2\lra{c(t), c'(t)}$.
+
+\begin{problem*}[4-17]
+\end{problem*}
+(a) Trivial.
+(b) $\nabla\cdot \mathbf{f} = \sum_i\frac{\partial}{\partial x^i}f^i = \Tr{f'}$ by definition.
+
+\begin{problem*}[4-18]
+\end{problem*}
+$D_vf(p) = \frac{d}{dt}f(p + tv)|_{t = 0} = f'(p)v$ via chain rule.
+The rest follows from Cauchy-Schwarz.
+
+\begin{problem*}[4-19]
+\end{problem*}
+(a)
+$df = \sum_i\frac{\partial}{\partial x^i}f^idx^i = \omega^1_{\nabla f}$.
+\begin{align*}
+    d\omega^1_F 
+    &=
+    dF^1 dx + dF^2 dy + dF^3 dz \\
+    &=
+    \pd{y}F^1 dy\wedge dx + \pd{z}F^1 dz\wedge dx + \pd{x}F^2 dx\wedge dy + \pd{z}F^2 dz\wedge dy + \pd{x}F^3 dx\wedge dz + \pd{y}F^3 dy\wedge dz \\
+    &=
+    \left(\pd{x}F^2 - \pd{y}F^1\right)dx\wedge dy + \left(\pd{y}F^3 - \pd{z}F^2\right)dy\wedge dz + \left(\pd{z}F^1 - \pd{x}F^3\right)dz\wedge dx \\
+    &=
+    \omega^2_{\nabla \times F}.
+\end{align*}
+
+\begin{align*}
+    d\omega^2_F 
+    &= 
+    dF^1 dy\wedge dz + dF^2 dz\wedge dx + dF^3 dx\wedge dy \\
+    &=
+    \pd{x}F^1 dx\wedge dy\wedge dz + \pd{y}F^2 dy\wedge dz\wedge dx + \pd{z}F^3 dz\wedge dx\wedge dy \\
+    &=
+    \left(\pd{x}F^1 + \pd{y}F^2 + \pd{z}F^3\right)dx\wedge dy\wedge dz \\
+    &=
+    \nabla\cdot F dx\wedge dy\wedge dz.
+\end{align*}
+
+(b) We have $d^2f = 0 = \omega^2_{\nabla\times\nabla f}$.
+We have $d^2\omega^1_{\nabla f} = 0 = \nabla\cdot f dx\wedge dy\wedge dz$.
+
+(c) Since $\nabla\times F = 0, d\omega^1_F = 0$.
+By Poincare's lemma, there exist a function $f$ such that $df = \omega^1_F$.
+We have $df = \omega^2_{\nabla f}$, so $\nabla f = F$.
 
 \end{document}
