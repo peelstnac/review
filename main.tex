@@ -121,4 +121,38 @@ I'm too lazy to type it out, so I will leave it as an exercise to the reader.
     \lra{v, v}\lra{w, w} - \lra{v, w}^2.
 \end{align*}
 
+\begin{problem*}[4-10]
+\end{problem*}
+By definition, 
+$$
+    \norm{w_n}^2 = \det\vv{w_1\\ \vdots \\ w_{n - 1}\\ w_n},
+$$
+where $w_n = w_1\times\cdots\times w_{n - 1}$.
+Observe that $w_1, ..., w_{n - 1}\in \spn{w_n}^\perp$, since 
+$$
+    \lra{w_i, w_n} = \det\vv{w_1\\ \vdots\\ w_{n - 1}\\ w_i} = 0
+$$ 
+if $1\le i\le n - 1$.
+
+By problem 4-3, we have 
+\begin{align*}
+    \det\vv{w_1\\ \vdots \\ w_{n - 1}\\ w_n} 
+    &= 
+    \sqrt{\det[\lra{w_i, w_j}]_{1\le i, j\le n}} \\
+    &= 
+    \sqrt{\lra{w_n, w_n}\det[\lra{w_i, w_j}]_{1\le i, j\le n - 1}} \\
+    &=
+    \norm{w_n}\sqrt{\det[\lra{w_i, w_j}]_{1\le i, j\le n - 1}}.
+\end{align*}
+Thus, $\norm{w_n} = \sqrt{\det[\lra{w_i, w_j}]_{1\le i, j\le n - 1}}$.
+
+\begin{problem*}[4-11]
+\end{problem*}
+Since $v_1, ..., v_n$ is an orthonormal basis, this result follows by the definition, 
+since $a_{i, j} = \lra{f(v_i), v_j} = \lra{f(v_j), v_i} = a_{j, i}$.
+
+\begin{problem*}[4-12]
+\end{problem*}
+
+
 \end{document}
