@@ -151,8 +151,33 @@ Thus, $\norm{w_n} = \sqrt{\det[\lra{w_i, w_j}]_{1\le i, j\le n - 1}}$.
 Since $v_1, ..., v_n$ is an orthonormal basis, this result follows by the definition, 
 since $a_{i, j} = \lra{f(v_i), v_j} = \lra{f(v_j), v_i} = a_{j, i}$.
 
-\begin{problem*}[4-12]
+\begin{problem*}[4-13]
 \end{problem*}
+(a) We have 
+\begin{align*}
+    (g\circ f)_*(v_p) 
+    &= 
+    ((g\circ f)'(p)v)_{g(f(p))}\\
+    &=
+    (g'(f(p))f'(p)v)_{g(f(p))} \\
+    &=
+    g_*(f'(p)v_{f(p)}) \\
+    &=
+    g_*(f_*(v_p)).
+\end{align*}
+Let $\omega$ be a $k$-form on $\RR^p$.
+Then,
+\begin{align*}
+    ((g\circ f)^*\omega)(p)(v_1, ..., v_k) 
+    &=
+    \omega(g(f(p)))(g_*(f_*(v_1)), ..., g_*(f_*(v_k))) \\
+    &=
+    (g^*\omega)(f(p))(f_*(v_1), ..., f_*(v_k)) \\
+    &=
+    (f^*g^*\omega)(p)(v_1, ..., v_k).
+\end{align*}
+
+(b) Follows from Theorem 4-7.
 
 
 \end{document}
