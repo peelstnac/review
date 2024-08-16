@@ -246,4 +246,23 @@ Then, $f^*(d\omega) = d(f^*\omega) = 0$, so $f^*\omega = d\eta$ for some $k$-for
 Using problem 4-13, we have $(f^{-1})^*(d\eta) = \omega = d(f^{-1})^*\eta$.
 Thus, $\omega$ is exact.
 
+\begin{problem*}[4-23]
+\end{problem*}
+By drawing a picture, we can guess that (you may need to switch $R_1$ with $R_2$ if unlucky)
+$$
+    c(x, y) = ([(R_2 - R_1)y + R_1]\cos(2\pi nx), [(R_2 - R_1)y + R_1]\sin(2\pi nx)).
+$$
+Indeed 
+\begin{align*}
+    (\partial c)(t) 
+    &=
+    -c(0, t) + c(1, t) + c(t, 0) - c(t, 1) \\
+    &=
+    c(t, 0) - c(t, 1) \\
+    &=
+    (R_1\cos(2\pi nt), R_1\sin(2\pi nt))
+    -
+    (R_2\cos(2\pi nt), R_2\sin(2\pi nt))
+\end{align*}
+
 \end{document}
